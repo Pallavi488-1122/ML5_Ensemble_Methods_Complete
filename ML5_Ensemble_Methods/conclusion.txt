@@ -1,0 +1,10 @@
+Ensemble Methods - Conclusion
+============================
+
+Best model based on test F1 Score: Random Forest
+
+The three ensemble methods were trained using the same Wisconsin Diagnostic Breast Cancer dataset, the same 80/20 stratified split, and comparable evaluation metrics. Hyperparameters were tuned using 5-fold cross-validation on the training set only.
+
+Random Forest uses bagging and averages many decision trees, which mainly reduces variance. Gradient Boosting and XGBoost build trees sequentially, allowing later trees to correct previous errors. XGBoost also includes additional regularization and optimized implementation details, which can improve predictive performance but may increase tuning complexity.
+
+The final choice should consider not only F1/accuracy but also training time, model complexity, and the train-test performance gap.
